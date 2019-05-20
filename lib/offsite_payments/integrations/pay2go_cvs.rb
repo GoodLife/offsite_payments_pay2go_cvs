@@ -305,7 +305,7 @@ module OffsitePayments #:nodoc:
           cipher = OpenSSL::Cipher::AES.new(256, :CBC)
           cipher.encrypt
           cipher.padding = 0
-          cipher.key = OffsitePayments::Integrations::Pay2goCvs.hash_key
+          cipher.key = OffsitePayments::Integrations::Pay2goCvs.hash_key[0..31]
           cipher.iv = OffsitePayments::Integrations::Pay2goCvs.hash_iv
           data = self.padding(data)
           encrypted = cipher.update(data) + cipher.final
