@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{OffsitePayments for Pay2go_cvs, a Taiwan based payment gateway}
   spec.description   = %q{OffsitePayments for Pay2go_cvs}
-  spec.homepage      = "https://github.com/GoodLife/offsite_payments_pay2go_cvs_"
+  spec.homepage      = "https://github.com/GoodLife/offsite_payments_pay2go_cvs"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
